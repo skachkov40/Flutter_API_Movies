@@ -11,7 +11,6 @@ Future getFilms() async {
   var resp = response.body;
   if (response.statusCode == 200) {
     final items = jsonDecode(resp)['movies'];
-    //debugPrint("декодируем $items");
     var movies = items.map<Movie>((json) {
       return Movie.fromJson(json);
     }).toList();

@@ -11,7 +11,6 @@ class Movie {
         title: json['title'],
         year: json['year'],
         poster: json['poster'],
-        description: json['description']
-    );
+        description: json['description']);
   }
 }
